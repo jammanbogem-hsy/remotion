@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>강릉 여행 브리핑 V2</title>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Noto Sans KR", "Apple SD Gothic Neo", Arial, sans-serif;
+        background: radial-gradient(circle at top left, rgba(29,185,84,0.16) 0%, rgba(26,5,51,0.92) 36%, #000 100%);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 28px;
+      }
+      .wrap {
+        width: min(100%, 1040px);
+        background: linear-gradient(180deg, rgba(255,255,255,0.10), rgba(255,255,255,0.05));
+        border: 1px solid rgba(255,255,255,0.12);
+        border-radius: 32px;
+        box-shadow: 0 30px 120px rgba(0,0,0,0.45), 0 0 80px rgba(29,185,84,0.12);
+        overflow: hidden;
+        backdrop-filter: blur(18px);
+      }
+      .hero {
+        padding: 34px 34px 22px;
+      }
+      .eyebrow {
+        font-size: 14px;
+        letter-spacing: 0.28em;
+        color: rgba(255,255,255,0.65);
+        font-weight: 800;
+      }
+      h1 {
+        margin: 14px 0 0;
+        font-size: clamp(36px, 6vw, 64px);
+        line-height: 1.02;
+        font-weight: 900;
+      }
+      .accent {
+        color: #1DB954;
+      }
+      p {
+        margin: 18px 0 0;
+        font-size: 18px;
+        line-height: 1.6;
+        color: rgba(255,255,255,0.8);
+        font-weight: 700;
+      }
+      video {
+        display: block;
+        width: 100%;
+        background: #000;
+      }
+      .footer {
+        padding: 20px 34px 34px;
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      a.button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 16px;
+        border-radius: 999px;
+        color: white;
+        text-decoration: none;
+        background: rgba(29,185,84,0.16);
+        border: 1px solid rgba(29,185,84,0.28);
+        font-weight: 800;
+      }
+      a.button:hover {
+        background: rgba(29,185,84,0.24);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="hero">
+        <div class="eyebrow">SPOTIFY WRAPPED STYLE V2</div>
+        <h1>강릉 여행 브리핑 <span class="accent">V2</span></h1>
+        <p>검정과 진한 보라 위에 스포티파이 초록 포인트를 얹고, 일정 카드를 하나씩 팝업시키는 스타일로 리디자인한 버전입니다.</p>
+      </section>
+      <video controls playsinline preload="metadata">
+        <source src="./gangneung-trip-briefing-v2.mp4" type="video/mp4" />
+        브라우저가 비디오 재생을 지원하지 않습니다.
+      </video>
+      <section class="footer">
+        <a class="button" href="./gangneung-trip-briefing-v2.mp4">V2 MP4 열기</a>
+        <a class="button" href="./gangneung-trip-briefing-v2.mp4" download>V2 다운로드</a>
+      </section>
+    </main>
+  </body>
+</html>
